@@ -1,7 +1,4 @@
 #welcome quotes.
-from socket import IPV6_JOIN_GROUP
-
-
 print(("Hello Kashee, Welcome to Python!"))
 
 #function of a newline
@@ -235,6 +232,14 @@ new_line()
 txt = " \"Philipians 1:3\" I thank my God anytime I remember You"
 print(txt)
 
+print("How old are you?", end= ' ')
+age = input()
+print("How tall are you?", end=' ')
+height = input()
+print("How much do you weigh?", end=' ')
+weight = input()
+
+print(f"So you're {age} old, {height} tall and {weight} heavy.")
 
 
 
