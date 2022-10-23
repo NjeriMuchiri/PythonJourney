@@ -12,14 +12,14 @@
 # print('You will be ' + str(int(myAge) + 1) + ' in a year.' )
 
 #Chapter2
-name = 'Njeri'
-password = 'kashee@#work'
-if name == 'Njeri':
-    print('hello,Njeri')
-    if password == 'kashee@#work':
-        print('Access granted.')
-    else:
-        print('Not Authorized!')
+# name = 'Njeri'
+# password = 'kashee@#work'
+# if name == 'Njeri':
+#     print('hello,Njeri')
+#     if password == 'kashee@#work':
+#         print('Access granted.')
+#     else:
+#         print('Not Authorized!')
 
 # name = 'Carol'
 # age = 3000
@@ -54,9 +54,46 @@ if name == 'Njeri':
 # else:
 #     print('Hi Njeri!')
     
-# using break state,ent on the loop
-while True:
-    name = input('Please type your name.')
-    if name == 'your name':
-       break
-print('Thank you!')
+# using break statement on the loop
+# while True:
+#     name = input('Please type your name.')
+#     if name == 'njesh':
+#        break
+# print('Thank you!')
+
+# # continue and break statements in a while loop
+# while True:
+#     name = input('Who are you?')
+#     if name != 'Muchiri':
+#         continue
+#     print('Hello, Muchiri. \n  What is the password? (web designer in making)')
+#     password = input()
+#     if password == 'kasheedesignerweb':
+#         break
+#     print('Access Granted')
+
+# True and falsey values
+# name = ''
+# while not name:
+#       name = input('Enter your name:') 
+# numOfGuests = int(input('How many guests will you have?'))
+# if numOfGuests:
+#     print('Be sure to have enough room for all your guests.')
+# print('Done')
+
+# for loop and the range function
+# myNameIs = input('what is your name programmer?')
+# print('My name is', myNameIs)
+# for i in range(5):
+#     print(myNameIs + ' Five Times(' + str(i) + ')')
+
+# print('My name is')
+# for i in range(5):
+#     print('Kashee Five Times (' + str(i) + ')')
+# total = 0
+# for num in range(101):
+#     total = total + num
+# print(total)
+
+for i in range(8, 10):
+    print(i)
