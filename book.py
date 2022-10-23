@@ -1,6 +1,6 @@
 #from automateboringstuffwithpython.com book
 #this program says hello and asks for my name
-#Chapter1
+#CHAPTER1
 # print('Hello, Kashee!')
 # print('What\'s your name?')
 # myName = input()
@@ -11,7 +11,7 @@
 # myAge = input()
 # print('You will be ' + str(int(myAge) + 1) + ' in a year.' )
 
-#Chapter2
+#CHAPTER2
 # name = 'Njeri'
 # password = 'kashee@#work'
 # if name == 'Njeri':
@@ -95,5 +95,17 @@
 #     total = total + num
 # print(total)
 
-for i in range(8, 10):
-    print(i)
+# for i in range(0, 30, 3):
+#     print(i)
+
+# importing modules
+import random 
+for i in range(5):
+    print(random.randint(1,10))
+    
+import sys
+while True:
+    response = input('Type exit to exit: ')
+    if response == 'exit':
+        sys.exit()
+    print('You typed ' + response + '.')
