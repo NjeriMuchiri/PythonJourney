@@ -39,18 +39,24 @@ if name == 'Njeri':
 # if spam < 5:
 #     print('Hello, world.')
 #     spam = spam + 1
-    
+
+    # prints your name endlessly
 # name = ""
 # while name != 'your name':
 #     print("Please type your name.")
 #     name = input() 
 # print('Thank you!')
 
-
-print('What is your name?')
-name = input()
-if name != 'njeri':
-    print('Not Authorized!', name)
-else:
-    print('Hi Njeri!')
-      
+# checks the name validity
+# name = input('what is your name?')
+# if name != 'njeri':
+#     print('Not Authorized!', name)
+# else:
+#     print('Hi Njeri!')
+    
+# using break state,ent on the loop
+while True:
+    name = input('Please type your name.')
+    if name == 'your name':
+       break
+print('Thank you!')
