@@ -207,27 +207,75 @@
 # hello('Bob')                  
 
 # return values and statements
-import random
-def getAnswer(answerNumber):
-    if answerNumber == 1:
-        return 'It is certain'
-    elif answerNumber == 2:
-        return 'It is decidely so'
-    elif answerNumber == 3:
-        return 'yes'
-    elif answerNumber == 4:
-        return 'Reply hazy try again'
-    elif answerNumber == 5:
-        return 'Ask again later'
-    elif answerNumber == 6:
-        return 'Concentrate and ask again'
-    elif answerNumber == 7:
-        return 'My reply is no'
-    elif answerNumber == 8:
-        return 'Outlook not so good'
-    elif answerNumber == 9:
-        return 'Very doubtful'
+# import random
+# def getAnswer(answerNumber):
+#     if answerNumber == 1:
+#         return 'It is certain'
+#     elif answerNumber == 2:
+#         return 'It is decidely so'
+#     elif answerNumber == 3:
+#         return 'yes'
+#     elif answerNumber == 4:
+#         return 'Reply hazy try again'
+#     elif answerNumber == 5:
+#         return 'Ask again later'
+#     elif answerNumber == 6:
+#         return 'Concentrate and ask again'
+#     elif answerNumber == 7:
+#         return 'My reply is no'
+#     elif answerNumber == 8:
+#         return 'Outlook not so good'
+#     elif answerNumber == 9:
+#         return 'Very doubtful'
+# print(getAnswer(random.randint(1, 9)))
     
-r = random.randint(1, 9)
-fortune = getAnswer(r)
-print(fortune)
+# r = random.randint(1, 9)
+# fortune = getAnswer(r)
+# print(fortune)
+# import random
+# print(random.randrange(1,10,2))
+
+#Keyword arguments #end
+# print('Hello', end=' ')
+# print('World')
+# #sep
+# print('cats', 'dogs', 'mice', sep=',')
+
+#call stack
+# def a():
+#     print('a() starts')
+#     b()
+#     d()
+#     print('a() returns')
+# def b():
+#     print('b() starts')
+#     c()
+#     print('b() returns')
+# def c():
+#     print('c() starts')
+#     print('c() returns')
+# def d():
+#     print('d() starts')
+#     print('d() returns')
+    
+# a()  
+# local and global scope
+# def spam():
+#     eggs = 99
+#     bacon()
+#     print(eggs)
+    
+# def bacon():
+#     ham = 101
+#     eggs = 0
+
+# spam()
+
+# global scope
+# def spam():
+#     print(eggs)
+# eggs = 42
+# spam()
+# print(eggs)
+  
+
