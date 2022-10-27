@@ -279,14 +279,28 @@
 # print(eggs)
   
 # Exception handling, error handling: try and except statements
-def spam(divideBy):
-    try:
-        return 42 / divideBy
-    except ZeroDivisionError:
-        print('Error: Invalid argument.')
-print(spam(2))
-print(spam(12))
-print(spam(0))
-print(spam(1))
+# def spam(divideBy):
+#     return 42 / divideBy
+# try:
+#         print(spam(2))
+#         print(spam(12))
+#         print(spam(0))
+#         print(spam(1))
+# except ZeroDivisionError:
+#         print('Error: Invalid argument.')
+
+# collatz sequence
+def collatz(number):
+    if number % 2 == 0:
+     print(number // 2)
+     return number // 2
+    elif number % 2 == 1:
+     print( 3 * number + 1)
+     return 3* number + 1
+n = int(input('Enter a number: '))
+while n != 1:
+    n = collatz(n)
+         
+
 
 
