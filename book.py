@@ -314,9 +314,11 @@
 # for name in catNames:
 #     print(' ' + name)
         
+# for i in [0,1,2,3]:
+#     print(i)
 
-for i in [0,1,2,3]:
-    print(i)
-    
+supplies = ['pens', 'staples', 'flame-throwers', 'binders']
+for i in range(len(supplies)):
+    print('Index ' + str(i) + ' in supplies: ' + supplies[i])
 
 
