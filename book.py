@@ -357,7 +357,24 @@
 # print(Ann)   
 
 #insert method can add  a value at nay index in the list
-Ann = ['Kashee', 'Njesh', 'Njerinna', 'Anika', 'Jeje']
-Ann.insert(1, 'NjeriMuchiri')
-print(Ann)
-   
+# Ann = ['Kashee', 'Njesh', 'Njerinna', 'Anika', 'Jeje']
+# Ann.insert(1, 'NjeriMuchiri')
+# print(Ann)
+
+##Removing values form list with remove()
+# Ann = ['Kashee', 'Njesh', 'Njerinna', 'Anika', 'Jeje']
+# Ann.remove('Kashee')
+# print(Ann)
+   #The del statement is good to use when you know the index of the value you want to remove from the list and remove method is good when you know the value you want to remove from the list
+#Sort Method
+# Ann = ['Kashee', 'Njesh', 'Njerinna', 'Anika', 'Jeje']
+# Ann.sort()
+# print(Ann)
+# Ann.sort(reverse = True)
+# print(Ann)
+
+Letters = ['a', 'z', 'A', 'Z']
+Letters.sort()
+print(Letters)
+Letters.sort(key = str.lower)
+print(Letters)
