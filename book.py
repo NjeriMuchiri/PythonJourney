@@ -373,8 +373,32 @@
 # Ann.sort(reverse = True)
 # print(Ann)
 
-Letters = ['a', 'z', 'A', 'Z']
-Letters.sort()
-print(Letters)
-Letters.sort(key = str.lower)
-print(Letters)
+# Letters = ['a', 'z', 'A', 'Z']
+# Letters.sort()
+# print(Letters)
+# Letters.sort(key = str.lower)
+# print(Letters)
+
+# name = 'Kashee'
+# for l in name:
+#     print('**** ' + l + ' ****' )
+
+##Mutable and immutable data types
+# A list value is a mutable data type * It can have values added, removes or changed
+# A string is immutable - It cannot be changed
+#The proper way to mutate a string is to use slicing and concatenation to build a new string by copying parts of the old string
+# name  = 'She goes by Kashee'
+# newName = name[0:12] + 'Njesh'
+# print(name)
+# print(newName)
+# Tuple is an immutable data type
+
+##Passing References
+# def eggs(someParameter):
+#     someParameter.append('Hello')
+# spam = [1,2,3]
+# eggs(spam)
+# print(spam)
+
+#The copy() and deepcopy() methods
+# Copy() - can be used to make a duplicate copy of a mutable value like a list or dictionary 
