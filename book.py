@@ -320,12 +320,44 @@
 # supplies = ['pens', 'staples', 'flame-throwers', 'binders']
 # for i in range(len(supplies)):
 #     print('Index ' + str(i) + ' in supplies is: ' + supplies[i])
+##the not in keywords 
+# myPets = ['Zophie', 'Pooka', 'FatTail']
+# name = input('Enter a pet name: ')
+# if name not in myPets:
+#     print('I do not have a pet named ' + name)
+# else:
+#     print(name + ' is my pet.')
+    
+# # Multiple Assignment Trick || The number of variables and length of line must be exactly equal else valueerr
+# cat = ['fat', 'black', 'loud']
+# size,color,disposition = cat
 
-myPets = ['Zophie', 'Pooka', 'FatTail']
-name = input('Enter a pet name: ')
-if name not in myPets:
-    print('I do not have a pet named ' + name)
-else:
-    print(name + ' is my pet.')
-    
-    
+##Augmented Assignment Operator +=
+# spam = 22
+# spam += 1
+# print(spam) #23
+##other augmented assignment operators +=, -=, *=1, /=, %=
+# spam  = 'Hello'
+# spam += ' Kashee the webdesigner!'
+# print(spam)
+
+# bacon = ['Zophie']
+# bacon *= 3
+# print(bacon)
+
+# #METHODS
+# A method is the same thing as a function except it is called on a value 
+# Ann = ['Kashee', 'Njesh', 'Njerinna', 'Anika', 'Jeje']
+# print(Ann.index('Jeje'))
+##Note if there are duplicates in the list the index of its first appearance is returned
+
+# Adding values with append and insert methods
+# Ann = ['Kashee', 'Njesh', 'Njerinna', 'Anika', 'Jeje']
+# Ann.append('NjeriMuchiri') #Adds to the end of list
+# print(Ann)   
+
+#insert method can add  a value at nay index in the list
+Ann = ['Kashee', 'Njesh', 'Njerinna', 'Anika', 'Jeje']
+Ann.insert(1, 'NjeriMuchiri')
+print(Ann)
+   
