@@ -400,5 +400,55 @@
 # eggs(spam)
 # print(spam)
 
-#The copy() and deepcopy() methods
-# Copy() - can be used to make a duplicate copy of a mutable value like a list or dictionary 
+#The copy() and deepcopy() copy modules
+# copy.copy() - can be used to make a duplicate copy of a mutable value like a list or dictionary 
+# deepcopy() - used if the list you need to copy contains lists since the function will copt these inner lists as well
+
+# def addintingly(valueadd):
+#     valueadd.insert(2, 'hello')
+# spam = [2,3,4,6,8,10]
+# addintingly(spam)
+# print(spam)
+
+##project on winding chapter 4:
+#character picture grid code
+         #CHAPTER 5
+
+# birthdays = {'Ken': ' Jan 16', 'Ann':'Oct 12', 'Kate':'March 16' }
+
+# while True:
+#     print('Enter a name: (blank to quit)')
+#     name = input()
+#     if name == '':
+#         break
+#     if name in birthdays:
+#         print(birthdays[name] + ' is the birthday of ' + name)
+#     else:
+#         print('I do not have birthday information for ' + name)
+#         bday = input()
+#         print('what is their birthday?')
+#         birthdays[name] = bday
+#         print(('Birthday database updated'))
+
+##Iterating with for loops on values, keys and items
+# spam = {'color': 'red', 'age':42}
+# for v in spam.values():
+#     print(v)
+# for k in spam.keys():
+#     print(k)
+# for i in spam.items():
+#     print(i)
+##get()Method
+# picnicItems = {'apples':5, 'wineglasses':2}
+# print('I am bringing ' + str(picnicItems.get('wineglasses', 0)) + ' 30wineglasses.')
+
+#setdefault()method
+# import pprint
+# message = 'It was a bright cold day in April, and the clocks were striking thirteen.'
+# count = {}
+# for character in message:
+#     count.setdefault(character, 0)
+#     count[character] = count[character] + 1
+# pprint.pprint(count)
+
+
