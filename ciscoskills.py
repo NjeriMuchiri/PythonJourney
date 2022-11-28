@@ -50,16 +50,15 @@
 # print(my_list)
 
 
-a = [5,6,7,8]
-b = [sum(a[0:x + 1]) for x in range (0, len(a))]
-print(b)
-data = [10, 9,8]
-def incr(x):
-    return x + 1
-print(list(map(incr,data)))
-
-print("Welcome to STARTUPIO".capitalize())
-
+# BMI
+def bmi(weight,height):
+    weight = float(input("Enter your weight: "))
+    height = float(input("Enter your height: "))
+    if height < 0.5 or weight > 300:
+        return None
+    calculations = weight / height **2
+    return calculations
+print("your bmi is: ",bmi(144,1.7))
 
 
 
