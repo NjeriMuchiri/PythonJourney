@@ -451,6 +451,8 @@
 #     count[character] = count[character] + 1
 # pprint.pprint(count)
 
+# STRING
+print(len('hello world!'))
 
 
 
