@@ -72,9 +72,11 @@
 #     return product
 # for n in range(1, 10):
 #     print(n, factorial_function(n))
+# # use case of dir
+# import math
 
-
-
+# for name in dir(math):
+#     print(name, end=' \t ')
 
 
 
