@@ -78,6 +78,25 @@
 # for name in dir(math):
 #     print(name, end=' \t ')
 
+# from random import random,seed
+# seed(1)
+# for i in range(5):
+#      print(random())
+
+# from random import choice, sample
+# my_list = [1,2,3,4,5,6,7,8,9,10]
+
+# print(choice(my_list))
+# print(sample(my_list, 5))
+# print(sample(my_list, 10))
+
+from platform import python_implementation, python_version_tuple
+
+print(python_implementation())
+
+for atr in python_version_tuple():
+    print(atr)
+
 
 
 
