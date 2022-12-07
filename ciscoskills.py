@@ -96,10 +96,23 @@
 
 # for atr in python_version_tuple():
 #     print(atr)
-from random import randint
+# from random import randint
 
-for i in range(2):
-   print(randint(1, 2), end='')
+# for i in range(2):
+#    print(randint(1, 2), end='')
+
+# Caesar Cipher
+text = input("Enter your message: ")
+cipher = ''
+for char in text:
+   if not char.isalpha():
+      continue
+   char = char.upper()
+   code = ord(char) + 1
+   if code > ord('Z'):
+      code = ord('A')
+   cipher += chr(code)
+print(cipher)
 
 
 
