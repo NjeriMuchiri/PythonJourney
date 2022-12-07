@@ -101,7 +101,7 @@
 # for i in range(2):
 #    print(randint(1, 2), end='')
 
-# Caesar Cipher
+# Caesar Cipher encryption
 text = input("Enter your message: ")
 cipher = ''
 for char in text:
@@ -113,6 +113,20 @@ for char in text:
       code = ord('A')
    cipher += chr(code)
 print(cipher)
+
+# decryption
+cipher = input('Enter your cryptogram: ')
+text = ''
+for char in cipher:
+   if not char.isalpha():
+      continue
+   char = char.upper()
+   code = ord(char) - 1
+   if code < ord('A'):
+      code = ord('Z')
+   text += chr(code)
+print(text)
+
 
 
 
