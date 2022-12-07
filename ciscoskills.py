@@ -90,12 +90,19 @@
 # print(sample(my_list, 5))
 # print(sample(my_list, 10))
 
-from platform import python_implementation, python_version_tuple
+# from platform import python_implementation, python_version_tuple
 
-print(python_implementation())
+# print(python_implementation())
 
-for atr in python_version_tuple():
-    print(atr)
+# for atr in python_version_tuple():
+#     print(atr)
+from random import randint
+
+for i in range(2):
+   print(randint(1, 2), end='')
+
+
+
 
 
 
