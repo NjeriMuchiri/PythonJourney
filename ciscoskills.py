@@ -128,14 +128,45 @@
 # print(text)
 
 # Palindrome - a word when read both forward and backward looks the same
-user = input("Enter some text: ")
+# user = input("Enter some text: ")
 
-text = user.replace(' ','')
-if len(text) > 1 and text.upper() == text[::-1].upper():
-     print("it's a palindrome")
+# text = user.replace(' ','')
+# if len(text) > 1 and text.upper() == text[::-1].upper():
+#      print("it's a palindrome")
+# else:
+#    print("it's not a palindrome")
+   
+# palindrome solution 2   
+# string= input("Please enter a word: ")
+
+# if(string == string[::-1]):
+#    print("It's a palindrome!")
+# else:
+#    print("It's not a palindrome")   
+         
+# Anagram case - words rearranged once becomes one and the same thing
+# word_1 = input("Enter the first word: ")
+# word_2 = input("Enter the second word: ")
+
+# word_1 = ''.join(sorted(list(word_1.upper().replace(' ', ''))))
+# word_2 = ''.join(sorted(list(word_2.upper().replace(' ', ''))))
+# if len(word_1) > 0 and word_1 == word_2:
+#    print("Anagram present")
+# else:
+#    print("Anagram absent")
+
+# Digit of Life
+date = input("Enter your birth date(farmat in YYYYMMDD) ")
+if len(date) != 8 or not date.isdigit():
+   print("Invalid date format.")
 else:
-   print("it's not a palindrome")
-
+   while len(date) > 1:
+      the_sum = 0
+      for dig in date:
+         the_sum += int(dig)
+      print(date)
+      date = str(the_sum)
+   print("Your Digit of Life is: " + date)
    
 
 
