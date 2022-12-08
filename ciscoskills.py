@@ -102,31 +102,41 @@
 #    print(randint(1, 2), end='')
 
 # Caesar Cipher encryption
-text = input("Enter your message: ")
-cipher = ''
-for char in text:
-   if not char.isalpha():
-      continue
-   char = char.upper()
-   code = ord(char) + 1
-   if code > ord('Z'):
-      code = ord('A')
-   cipher += chr(code)
-print(cipher)
+# text = input("Enter your message: ")
+# cipher = ''
+# for char in text:
+#    if not char.isalpha():
+#       continue
+#    char = char.upper()
+#    code = ord(char) + 1
+#    if code > ord('Z'):
+#       code = ord('A')
+#    cipher += chr(code)
+# print(cipher)
 
-# decryption
-cipher = input('Enter your cryptogram: ')
-text = ''
-for char in cipher:
-   if not char.isalpha():
-      continue
-   char = char.upper()
-   code = ord(char) - 1
-   if code < ord('A'):
-      code = ord('Z')
-   text += chr(code)
-print(text)
+# # decryption
+# cipher = input('Enter your cryptogram: ')
+# text = ''
+# for char in cipher:
+#    if not char.isalpha():
+#       continue
+#    char = char.upper()
+#    code = ord(char) - 1
+#    if code < ord('A'):
+#       code = ord('Z')
+#    text += chr(code)
+# print(text)
 
+# Palindrome - a word when read both forward and backward looks the same
+user = input("Enter some text: ")
+
+text = user.replace(' ','')
+if len(text) > 1 and text.upper() == text[::-1].upper():
+     print("it's a palindrome")
+else:
+   print("it's not a palindrome")
+
+   
 
 
 
