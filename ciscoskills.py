@@ -167,8 +167,19 @@
 #       print(date)
 #       date = str(the_sum)
 #    print("Your Digit of Life is: " + date)
-   
 
+#Fibonacci with miscellanious
+def fibonacci(n):
+    p = pp = 1
+    for i in range(n):
+        if i in [0, 1]:
+            yield 1
+        else:
+            n = p + pp
+            pp, p = p, n
+            yield n
+fibs = list(fibonacci(10))
+print (fibs)
 
 
 
