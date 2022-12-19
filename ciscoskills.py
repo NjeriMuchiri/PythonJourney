@@ -169,18 +169,20 @@
 #    print("Your Digit of Life is: " + date)
 
 #Fibonacci with miscellanious
-def fibonacci(n):
-    p = pp = 1
-    for i in range(n):
-        if i in [0, 1]:
-            yield 1
-        else:
-            n = p + pp
-            pp, p = p, n
-            yield n
-fibs = list(fibonacci(10))
-print (fibs)
-
+# def fibonacci(n):
+#     p = pp = 1
+#     for i in range(n):
+#         if i in [0, 1]:
+#             yield 1
+#         else:
+#             n = p + pp
+#             pp, p = p, n
+#             yield n
+# fibs = list(fibonacci(10))
+# print (fibs)
+# list comprehensions
+list_2 = [10 ** ex for ex in range(6)]
+print(list_2)
 
 
 
