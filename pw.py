@@ -1,4 +1,4 @@
-#! /usr/bin/python3   
+#! /usr/bin/python3   #the line is needed to run on the command line
 #! pw.py - An insecure password locker program
 
 PASSWORDS = {'email': 'F7minlBDDuvMJuxESSKHFhTxFtjVB6',
