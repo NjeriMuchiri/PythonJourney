@@ -463,13 +463,19 @@
 # import os
 # os.path.abspath('.')
 
-#reading files
-helloFile = open('/home/muchirinjeri/PythonJourney/hello.txt')
-helloContent = helloFile.read()
-print(helloContent)
-    
-  
-  
+#reading files read()
+# helloFile = open('/home/muchirinjeri/PythonJourney/hello.txt')
+# helloContent = helloFile.read()
+# print(helloContent)
+
+#readlines()
+# sonnetFile = open('/home/muchirinjeri/PythonJourney/sonnet.txt')
+# sonnetFile.readlines()   
+ 
+#write()
+baconFile = open('bacon.txt', 'w')
+baconFile.write('Hello World!\n')
+baconFile.close()  
 
 
 
