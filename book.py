@@ -459,7 +459,12 @@
 # pyperclip.copy('Hello world!')
 # pyperclip.paste()
 
-    
+# CHAPTER 8
+# import os
+# os.path.abspath('.')
+
+helloFile = open('/home/muchirinjeri/PythonJourney/hello.txt')
+
     
   
   
