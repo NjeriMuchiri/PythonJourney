@@ -463,8 +463,10 @@
 # import os
 # os.path.abspath('.')
 
+#reading files
 helloFile = open('/home/muchirinjeri/PythonJourney/hello.txt')
-
+helloContent = helloFile.read()
+print(helloContent)
     
   
   
