@@ -52,19 +52,31 @@
 
 
 #Class #constructor
-class CreditCard:
-    def __init__(self, number,company,limit):
-        self.number= number
-        self.company = company
-        self.limit = limit
-        
-c1 = CreditCard(number = "7654546734562345", company = "Njerina",limit = "5000")
-c2 = CreditCard(number = "5678546323455432",company = "jerina",limit = "6000")
-c3 = CreditCard(number = "6789657845632345",company = "erina",limit = "4000")
-c4 = CreditCard(number = "7654678967543234",company = "rina",limit = "3000")
+# class CreditCard:
+#     def __init__(self, number,company,limit):
+#         self.number= number
+#         self.company = company
+#         self.limit = limit
+    
+#     def hide(self):
+#         self.number = f'**** **** **** {self.number[-4:]}'
+# c1 = CreditCard(number = "7654546734562345", company = "Njerina",limit = "5000")
 
-print(c1.number,c1.company,c1.limit)
-print(c2.number,c1.company,c1.limit)
-print(c3.number,c1.company,c1.limit)
-print(c4.number,c1.company,c1.limit)
+# c1.hide()
+# print(c1.number)
+
+#Tutorial final project
+
+#Game Variables
+
+class Player:
+    def __init__(self,name):
+        self.name = name
+        self.points = 0
+        self.cards = list(range(1, 11, 1))
+p1 = Player(name = "Kashee")
+p2 = Player(name = "Kaggy")
+
+        
+
 
