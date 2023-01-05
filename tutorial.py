@@ -38,14 +38,33 @@
 # doPyth(3,4,5) 
 # doPyth(5,6,7)      
 
-def hide_cards(card_numbers):
-    cards_list = []
-    for card_number in card_numbers:
-        last_four_digits = card_number[-4:]
-        formattedCreditCard =  f'**** **** **** {last_four_digits}'
-        cards_list.append(formattedCreditCard)
+# def hide_cards(card_numbers):
+#     cards_list = []
+#     for card_number in card_numbers:
+#         last_four_digits = card_number[-4:]
+#         formattedCreditCard =  f'**** **** **** {last_four_digits}'
+#         cards_list.append(formattedCreditCard)
         
-    return cards_list
+#     return cards_list
     
-my_card = hide_cards(['1234567890123456','3456654378967654','2345543267898765'])
-print(my_card)
+# my_card = hide_cards(['1234567890123456','3456654378967654','2345543267898765'])
+# print(my_card)
+
+
+#Class #constructor
+class CreditCard:
+    def __init__(self, number,company,limit):
+        self.number= number
+        self.company = company
+        self.limit = limit
+        
+c1 = CreditCard(number = "7654546734562345", company = "Njerina",limit = "5000")
+c2 = CreditCard(number = "5678546323455432",company = "jerina",limit = "6000")
+c3 = CreditCard(number = "6789657845632345",company = "erina",limit = "4000")
+c4 = CreditCard(number = "7654678967543234",company = "rina",limit = "3000")
+
+print(c1.number,c1.company,c1.limit)
+print(c2.number,c1.company,c1.limit)
+print(c3.number,c1.company,c1.limit)
+print(c4.number,c1.company,c1.limit)
+
