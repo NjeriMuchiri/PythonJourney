@@ -133,4 +133,52 @@ list.pop(2)
 print(list)#answer is [10,20,40]
 new_line()
 
+t = '%(a)s %(b)s %(c)s'
+print(t % dict(a ='welcome', b= 'to',c = 'turing'))
+new_line() #welcome to turing is answer
 
+class Hello:
+    
+    def __init__(self, a='welcome to'):
+       self.a = a
+    
+    def welcome(self, x):
+        print(self.a + x)
+h = Hello()
+h.welcome('Turing') #Welcome to turing is answer
+
+alph = 'abcd'
+for i in range(len(alph)):
+    alph[i].upper()
+print(alph) #abcd is answer
+new_line()
+import re
+result = re.findall('Welcome to Turing', 'Welcome', 1)
+print(result) # [] is answer
+new_line()
+# x = ['ab', 'cd']
+# print(list(map(x.len,x)))
+
+list1 = [1,2,6,12]
+list2 = [12,6,2,1]
+print(list1 == list2)
+print(set(list1) == set(list2)) # false true is the answer
+new_line()
+
+class Developer:
+    def __init__(self):
+        self.seniority = 'Junior'
+        self.skills = ''
+    
+    def display(self):
+        print('Welcome to turing with {seniority} developer with skill {skills}'.format(seniority = self.__seniority__, skills = self.skills))
+        
+class NodeJs(Developer):
+    def __init__(self):
+        super().__init__()
+        self.__seniority__ = 'Senior'
+        self.skills = 'NodeJs'
+c = NodeJs()
+c.display()
+new_line() #welcome to turing with senior developer with skills NodeJs
+        
