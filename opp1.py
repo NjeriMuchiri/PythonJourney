@@ -37,8 +37,13 @@
 
 # oop2
 class Item:
-    def __init__(self,name,price,quantity = 0):
-        print(f" An instance created:{name}")
+    pay_rate = 0.8 #pay rate after 20% discount
+    def __init__(self,name: str, price: float, quantity = 0):
+           #Run validations to the received arguments
+        assert price >= 0
+        assert quantity >= 0
+        
+        #Assign to self object
         self.name = name
         self.price = price
         self.quantity = quantity
@@ -46,12 +51,18 @@ class Item:
     def calculate_total_price(self):
           return self.price * self.quantity
     
+    def apply_discount(self):
+        self.price = self.price * self.pay_rate
        
-item1 = Item('Iphone',100,3)
-item2= Item('laptop',100,4)
+item1 = Item('Iphone',1000,5)
+item2 = Item('laptop',10000,2)
+item3 = Item('cable',100,4)
+item4 = Item('Mouse',160,3)
+item5= Item('keyboard',150,4)
 
-print(item1.calculate_total_price())
-print(item2.calculate_total_price())
+
+# print(Item.__dict__) #All the attribute for class level
+# print(item2.__dict__)#All the attribute for instance level
 
 
 
