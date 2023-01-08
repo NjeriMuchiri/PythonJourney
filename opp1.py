@@ -37,21 +37,21 @@
 
 # oop2
 class Item:
-    def calculate_total_price(self, x, y):
-          return x * y
+    def __init__(self,name,price,quantity = 0):
+        print(f" An instance created:{name}")
+        self.name = name
+        self.price = price
+        self.quantity = quantity
+       
+    def calculate_total_price(self):
+          return self.price * self.quantity
     
-    
-    
-    
-    
-item1 = Item()
-item1.name = "IPhone"
-item1.price = 140000
-item1.quantity = 5
-print(item1.calculate_total_price(item1.price, item1.quantity))
+       
+item1 = Item('Iphone',100,3)
+item2= Item('laptop',100,4)
 
-item2= Item()
-item2.name = "laptop"
-item2.price = 100000
-item2.quantity = 5
-print(item2.calculate_total_price(item2.price, item2.quantity))
+print(item1.calculate_total_price())
+print(item2.calculate_total_price())
+
+
+
