@@ -38,21 +38,28 @@
 # oop2
 class Item:
     pay_rate = 0.8 #pay rate after 20% discount
+    all = []
     def __init__(self,name: str, price: float, quantity = 0):
-           #Run validations to the received arguments
-        assert price >= 0
+        #Run validations to the received arguments
+        assert price >= 0 
         assert quantity >= 0
         
         #Assign to self object
         self.name = name
         self.price = price
         self.quantity = quantity
+        
+        #Actions to execute
+        Item.all.append(self)
+        
        
     def calculate_total_price(self):
           return self.price * self.quantity
     
     def apply_discount(self):
         self.price = self.price * self.pay_rate
+    def __repr__(self):
+        return f"Item('{self.name}', {self.price}, {self.quantity})"
        
 item1 = Item('Iphone',1000,5)
 item2 = Item('laptop',10000,2)
@@ -60,7 +67,7 @@ item3 = Item('cable',100,4)
 item4 = Item('Mouse',160,3)
 item5= Item('keyboard',150,4)
 
-
+print(Item.all)
 # print(Item.__dict__) #All the attribute for class level
 # print(item2.__dict__)#All the attribute for instance level
 
