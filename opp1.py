@@ -83,8 +83,27 @@ class Item:
         
     def __repr__(self):
         return f"Item('{self.name}', {self.price}, {self.quantity})"
+    
+class Phone(Item):
+         all = []
+         def __init__(self, name: str, price: float, quantity = 0,broken_phones = 0):
+         #call to super function to have acccess to all methods
+              super().__init__(
+                  name,price,quantity
+               )
+        #Run validations to the received arguments
+              assert broken_phones >= 0
+        #Assign to self object
+              self.broken_phones = broken_phones
+        #Actions to execute
+              Phone.all.append(self)
+phone1 = Phone("Iphone13", 500, 5, 1)
+print(phone1.calculate_total_price())
+phone2 = Phone("Iphone14", 1000, 7, 3)
+print(phone2.calculate_total_price())
+
        
-print(Item.is_integer(7.0))
+# print(Item.is_integer(7.0))
 # print(Item.__dict__) #All the attribute for class level
 # print(item2.__dict__)#All the attribute for instance level
 
