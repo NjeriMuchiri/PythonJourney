@@ -8,14 +8,23 @@ class Item:
         assert quantity >= 0
         
         #Assign to self object
-        self.name = name
+        self.__name = name
         self.price = price
         self.quantity = quantity
         
         #Actions to execute
         Item.all.append(self)
         
-       
+    @property 
+    #property decorator = Read-only attribute
+    def name(self):
+        return self.__name
+    
+    @name.setter
+    def name(self, value):
+        #  print("You are trying to set a new name:")
+         self.__name = value
+          
     def calculate_total_price(self):
           return self.price * self.quantity
     
@@ -23,6 +32,7 @@ class Item:
         self.price = self.price * self.pay_rate
     
     @classmethod
+    #used to manipulate python data structure
     def instantiate_from_csv(cls):
         with open('items.csv', 'r')as f:
             reader = csv.DictReader(f) #reads content as a dictionary
@@ -33,7 +43,8 @@ class Item:
                 price=float(item.get('price')),
                 quantity=int(item.get('quantity')),
          )
-    @staticmethod         
+    @staticmethod  
+    #for uniqueness       
     def is_integer(num):
         #we will count out the floats that are point zeroi.e 10.0 etc
         if isinstance(num, float):
@@ -46,8 +57,6 @@ class Item:
     def __repr__(self):
         return f"{self.__class__.__name__}('{self.name}', {self.price}, {self.quantity})"
     
-
-
        
 # print(Item.is_integer(7.0))
 # print(Item.__dict__) #All the attribute for class level
