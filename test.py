@@ -181,4 +181,12 @@ class NodeJs(Developer):
 c = NodeJs()
 c.display()
 new_line() #welcome to turing with senior developer with skills NodeJs
-        
+document = (299039484848, 'Braham gupta', (101,132,345), ['singing','quizing'])
+document[-1].append('poetry')  
+print(document)  
+
+A = [6,4,7,10.11]
+B = [2,4,6,8,10] 
+C = [x for x in A if x in B]
+print(C)
+
