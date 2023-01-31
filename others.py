@@ -1,42 +1,42 @@
 #geneating own dataset
-from faker import Faker
-fake = Faker()
-for _ in range(10):
-    print(fake.name())
+# from faker import Faker
+# fake = Faker()
+# for _ in range(10):
+#     print(fake.name())
     
-def new_line():
-    print('\n')
-new_line()
+# def new_line():
+#     print('\n')
+# new_line()
 
     
-#how to check the largest string between two
-str1 = 'Kasheeinthebuilding'
-str2 = 'kasheeinthebuidingcoding'
+# #how to check the largest string between two
+# str1 = 'Kasheeinthebuilding'
+# str2 = 'kasheeinthebuidingcoding'
 
-if str1 > str2:
-    print(str1, 'is the largest string')
-else:
-    print(str2, 'is the largest string')
+# if str1 > str2:
+#     print(str1, 'is the largest string')
+# else:
+#     print(str2, 'is the largest string')
 
-# print(max(str1,str2))
+# # print(max(str1,str2))
 
-new_line()
+# new_line()
 
 #print month of a year
 
-import calendar
-print(calendar.month(2023,2))
+# import calendar
+# print(calendar.month(2023,2))
 
-#how to make colorful texts
-print("\033[92mKashee is a firm believer")
-print("\033[96mKashee loves ken")
-print("\033[93mKashee is yet to be a great software engineer")
-print("\033[95mKashee wants to be overly consistent when it comes to working out!")
-print("\033[1mKashee loves helping her mum and others out when necessary")
-print("\033[4mKashee wants to be consistent in her coding learning graph")
-print("\033[94mKashee feels like her life is about to change for the better")
+# #how to make colorful texts
+# print("\033[92mKashee is a firm believer")
+# print("\033[96mKashee loves ken")
+# print("\033[93mKashee is yet to be a great software engineer")
+# print("\033[95mKashee wants to be overly consistent when it comes to working out!")
+# print("\033[1mKashee loves helping her mum and others out when necessary")
+# print("\033[4mKashee wants to be consistent in her coding learning graph")
+# print("\033[94mKashee feels like her life is about to change for the better")
 
-new_line()
+# new_line()
 #password cracker
 # import subprocess
 
@@ -106,6 +106,58 @@ new_line()
 # menubar.add_cascade(label="Theme", menu=theme_menu)
 # root.config(menu=menubar)
 # root.mainloop()
+
+#Counting character occurences using python
+
+# def count_characters(s):
+#     count = {}
+#     for i in s:
+#         if i in count:
+#             count[i] += 1
+#         else:
+#             count[i] = 1
+#     print(count)
+
+# word = input("Enter your string: ")
+# print(count_characters(word))
+
+
+# rotating the list of numbers by 3:
+nums = [1,2,3,4,5,6,7]
+k = 3
+nums = (nums[len(nums) - k:len(nums)]) + nums[0: len(nums) - k]
+print(nums)
+
+# #by 2
+# numbs = [-1,-100,3,99]
+# k = 2
+# numbs = (numbs[len(numbs) - k:len(numbs)]) + numbs[0: len(numbs) - k]
+# print(numbs)
+
+
+
+A = [34,23,1,24,75,33,54,8]
+K = 60
+class Solution:
+    def twoSumlessThank(self, A: list[int], k:int) -> int:
+        A = sorted(A)
+        i = 0
+        j = len(A) - 1
+        
+        ans = -1
+        
+        while i < j:
+            if A[i] + A[j] < K:
+                ans = max(ans, A[i] + A[j])
+                i += 1
+            else:
+                j -= 1
+        return ans
+sum1 = Solution()
+print(sum1.twoSumlessThank([34,23,1,24,75,33,54,8], 60))           
+            
+        
+
 
 
 
