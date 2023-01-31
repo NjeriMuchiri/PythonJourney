@@ -155,7 +155,20 @@ class Solution:
         return ans
 sum1 = Solution()
 print(sum1.twoSumlessThank([34,23,1,24,75,33,54,8], 60))           
-            
+
+class Summin:
+    def twoSumless(self, A, K):
+        ans = -1
+        if len(A) == 1:
+            return -1
+        for i in range(len(A)):
+            for j in range(i + 1, len(A)):
+                temp = A[i] + A[j]
+                if temp < K:
+                    ans = max(ans,temp)
+        return ans
+ob1 = Summin()
+print(ob1.twoSumless([34,23,1,24,75.33,54,8], 60))  
         
 
 
