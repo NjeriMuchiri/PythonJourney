@@ -138,37 +138,58 @@ print(nums)
 
 A = [34,23,1,24,75,33,54,8]
 K = 60
-class Solution:
-    def twoSumlessThank(self, A: list[int], k:int) -> int:
-        A = sorted(A)
-        i = 0
-        j = len(A) - 1
+# class Solution:
+#     def twoSumlessThank(self, A: list[int], k:int) -> int:
+#         A = sorted(A)
+#         i = 0
+#         j = len(A) - 1
         
-        S = -1
+#         S = -1
         
-        while i < j:
-            if A[i] + A[j] < K:
-                S = max(S, A[i] + A[j])
-                i += 1
-            else:
-                j -= 1
-        return S
-sum1 = Solution()
-print(sum1.twoSumlessThank([34,23,1,24,75,33,54,8], 60))           
+#         while i < j:
+#             if A[i] + A[j] < K:
+#                 S = max(S, A[i] + A[j])
+#                 i += 1
+#             else:
+#                 j -= 1
+#         return S
+# sum1 = Solution()
+# print(sum1.twoSumlessThank([34,23,1,24,75,33,54,8], 60))    
+# print(sum1.twoSumlessThank([10,20,30], 15))  
+       
 
 class Summin:
     def twoSumless(self, A, K):
-        ans = -1
+        S = -1
         if len(A) == 1:
             return -1
         for i in range(len(A)):
             for j in range(i + 1, len(A)):
                 temp = A[i] + A[j]
                 if temp < K:
-                    ans = max(ans,temp)
-        return ans
+                    S = max(S,temp)
+        return S
 ob1 = Summin()
-print(ob1.twoSumless([34,23,1,24,75.33,54,8], 60))  
+print(ob1.twoSumless([34,23,1,24,75,33,54,8], 60)) 
+print(ob1.twoSumless([10,20,30], 15))  
+ 
+#turing solutions below
+class Summin:
+    def twoSumless(self, A, K):
+        A = [34,23,1,24,75,33,54,8]
+        K = 60
+        S = -1
+        if len(A) == 1:
+            return -1
+        for i in range(len(A)):
+            for j in range(i + 1, len(A)):
+                temp = A[i] + A[j]
+                if temp < K:
+                    S = max(S,temp)
+        return S
+ob1 = Summin()
+print(ob1.twoSumless([A], K)) 
+# print(ob1.twoSumless([10,20,30], 15)) 
         
 
 
