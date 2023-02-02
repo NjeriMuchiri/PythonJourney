@@ -191,8 +191,30 @@ ob1 = Summin()
 print(ob1.twoSumless([A], K)) 
 # print(ob1.twoSumless([10,20,30], 15)) 
         
+# finding the lucky integer in an array #turing
+class Solution:
+    def findLucky(self,arr:list[int])->int:
+         myDict = {}
+         for i in range(len(arr)):
+             myDict[arr[i]] = myDict.get(arr[i], 0) + 1
+         defaultReturnVal = -1
+         for key,value in myDict.items():
+             if key == value and key > defaultReturnVal:
+                 defaultReturnVal = key
+         return defaultReturnVal
+     
+obj1 = Solution()
+print(obj1.findLucky([2,2,3,4]))
+print(obj1.findLucky([1,2,2,3,3,3]))
+print(obj1.findLucky([2,2,2,3,3]))
+print(obj1.findLucky([5]))
+print(obj1.findLucky([7,7,7,7,7,7]))
 
 
+
+
+
+        
 
 
 
