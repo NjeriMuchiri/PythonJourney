@@ -1,139 +1,17 @@
-#geneating own dataset
-# from faker import Faker
-# fake = Faker()
-# for _ in range(10):
-#     print(fake.name())
-    
-# def new_line():
-#     print('\n')
-# new_line()
-
-    
-# #how to check the largest string between two
-# str1 = 'Kasheeinthebuilding'
-# str2 = 'kasheeinthebuidingcoding'
-
-# if str1 > str2:
-#     print(str1, 'is the largest string')
-# else:
-#     print(str2, 'is the largest string')
-
-# # print(max(str1,str2))
-
-# new_line()
-
-#print month of a year
-
-# import calendar
-# print(calendar.month(2023,2))
-
-# #how to make colorful texts
-# print("\033[92mKashee is a firm believer")
-# print("\033[96mKashee loves ken")
-# print("\033[93mKashee is yet to be a great software engineer")
-# print("\033[95mKashee wants to be overly consistent when it comes to working out!")
-# print("\033[1mKashee loves helping her mum and others out when necessary")
-# print("\033[4mKashee wants to be consistent in her coding learning graph")
-# print("\033[94mKashee feels like her life is about to change for the better")
-
-# new_line()
-#password cracker
-# import subprocess
-
-# data = (
-#     subprocess.check_output(["netsh","wlan","show","profiles"]).decode("utf-8").split("\n")
-# )
-# profiles = [i.split(":")[1][1:-1] for i in data if "All User Profile" in i]
-# for i in profiles:
-#     results = (
-#         subprocess
-#         .check_output(["netsh","wlan","show","profile",i,"key=clear"]).decode("utf-8").split("\n")
-#     ) 
-#     results = [b.split(":")[1][1:-1] for b in results if "Key Content" in b]
-#     try:
-#         print("{:<30}| {:<}".format(i, results[0]))
-#     except IndexError:
-#         print("{:<30}| {:<}".format(i, ""))
-
-#Digital Clock
-# import every_tkinter as tk
-# from time import strftime
-
-# def light_theme():
-#     frame = tk.Frame(root, bg="white")
-#     frame.place(relx=0.1, rely=0.1, relwidth=0.8,relheight=0.8)
-#     lbl_1 = tk.Label(frame, font=('calibri', 40, 'bold'), background='white', foreground='black')
-#     lbl_1.pack(anchor="s")
-    
-#     def time():
-#         string = strftime('%I:%M:%S %p')
-#         lbl_1.config(text=string)
-#         lbl_1.after(1000, time)
-#     time()
-    
-# def dark_theme():
-#     frame = tk.Frame(root, bg="#22478a")
-#     frame.place(relx=0.1, rely=0.1,relwidth=0.8,relheight=0.8)
-#     lbl_2 = tk.Label(frame, font=('calibri',40, 'bold'), background='#22478a', foreground='black')
-#     lbl_2.pack(anchor='s')
-    
-#     def time():
-#         string = strftime('%I:%M:%S %p')
-#         lbl_2.config(text=string)
-#         lbl_2.after(1000, time)
-#     time()
-
-# root = tk.Tk()
-# root.title('Digital-Clock')
-# canvas = tk.Canvas(root, height=140,width=400)
-# canvas.pack
-
-# frame = tk.Frame(root, bg='22478a')
-# frame.place(relx=0.1,rely=0.1,relwidth=0.8,relheight=0.8)
-# lbl = tk.Label(frame,font=('calibri',40,'bold'), background='#22478a', foreground='black')
-# lbl.pack(anchor="s")
-    
-# def time():
-#         string = strftime('%I:%M:%S %p')
-#         lbl.config(text=string)
-#         lbl.after(1000, time)
-# time()
-
-# menubar = tk.Menu(root)
-# theme_menu = tk.Menu(menubar,tearoff=0)
-# theme_menu.add_command(label="Light",command=light_theme)
-# theme_menu.add_command(label="Dark",command=dark_theme)
-# menubar.add_cascade(label="Theme", menu=theme_menu)
-# root.config(menu=menubar)
-# root.mainloop()
-
-#Counting character occurences using python
-
-# def count_characters(s):
-#     count = {}
-#     for i in s:
-#         if i in count:
-#             count[i] += 1
-#         else:
-#             count[i] = 1
-#     print(count)
-
-# word = input("Enter your string: ")
-# print(count_characters(word))
-
-
+def new_line():
+    print('\n')
+new_line()
 # rotating the list of numbers by 3:
 nums = [1,2,3,4,5,6,7]
 k = 3
 nums = (nums[len(nums) - k:len(nums)]) + nums[0: len(nums) - k]
 print(nums)
-
+new_line()
 # #by 2
 # numbs = [-1,-100,3,99]
 # k = 2
 # numbs = (numbs[len(numbs) - k:len(numbs)]) + numbs[0: len(numbs) - k]
 # print(numbs)
-
 
 
 A = [34,23,1,24,75,33,54,8]
@@ -157,7 +35,7 @@ K = 60
 # print(sum1.twoSumlessThank([34,23,1,24,75,33,54,8], 60))    
 # print(sum1.twoSumlessThank([10,20,30], 15))  
        
-
+new_line()
 class Summin:
     def twoSumless(self, A, K):
         S = -1
@@ -172,8 +50,9 @@ class Summin:
 ob1 = Summin()
 print(ob1.twoSumless([34,23,1,24,75,33,54,8], 60)) 
 print(ob1.twoSumless([10,20,30], 15))  
- 
-#turing solutions below
+
+new_line()
+#turing solutions below for a max sum of numbers
 class Summin:
     def twoSumless(self, A, K):
         A = [34,23,1,24,75,33,54,8]
@@ -190,13 +69,15 @@ class Summin:
 ob1 = Summin()
 print(ob1.twoSumless([A], K)) 
 # print(ob1.twoSumless([10,20,30], 15)) 
-        
+new_line()     
 # finding the lucky integer in an array #turing
 class Solution:
     def findLucky(self,arr:list[int])->int:
          myDict = {}
+         arrLen = len(arr)
          for i in range(len(arr)):
-             myDict[arr[i]] = myDict.get(arr[i], 0) + 1
+            if arr[i] <= arrLen:
+              myDict[arr[i]] = myDict.get(arr[i], 0) + 1
          defaultReturnVal = -1
          for key,value in myDict.items():
              if key == value and key > defaultReturnVal:
@@ -209,6 +90,32 @@ print(obj1.findLucky([1,2,2,3,3,3]))
 print(obj1.findLucky([2,2,2,3,3]))
 print(obj1.findLucky([5]))
 print(obj1.findLucky([7,7,7,7,7,7]))
+new_line()
+
+#turing baseball game
+class Solution:
+    def calPoints(self, ops: list[str]) -> int:
+        
+        stack = []
+        
+        for op in ops:
+            if op == "+":
+                stack.append(stack[-1] + stack[-2])
+            
+            elif op == "D":
+                  stack.append(2 * stack[-1])
+            elif op == "C":
+                  stack.pop()
+            else:
+                  stack.append(int(op))
+        return sum(stack)
+baseball = Solution()
+print(baseball.calPoints(["5","2","C","D","+"]))
+
+new_line()
+
+
+
 
 
 
