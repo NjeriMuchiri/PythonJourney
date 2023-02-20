@@ -14,13 +14,27 @@
 # else:
 #     print("just a number")
 
-#Program to print maximum of two numbers
+# #Program to print maximum of two numbers
+# num1 = int(input("Enter a number: "))
+# num2 = int(input("Enter a number: "))
+
+# if num1 > num2:
+#     print(num1, "is greater")
+# elif num2 > num1:
+#     print(num2, "is greater")
+# else:
+#     print("they are equal")
+
+## Program to print the maximum of three numbers
 num1 = int(input("Enter a number: "))
 num2 = int(input("Enter a number: "))
+num3 = int(input("Enter a number: "))
 
-if num1 > num2:
-    print(num1, "is greater")
-elif num2 > num1:
-    print(num2, "is greater")
+if (num1 >= num2) and (num1 >= num3):
+    print(num1,"is the greatest")
+elif (num2 >= num1) and (num2 >= num3):
+    print(num2,"is the greatest")
+elif (num3 >= num2) and (num3 >= num1):
+    print(num3,"is the greatest")
 else:
-    print("they are equal")
+    print(num1,num2,num3,"are equal")
