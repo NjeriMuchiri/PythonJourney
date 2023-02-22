@@ -26,15 +26,29 @@
 #     print("they are equal")
 
 ## Program to print the maximum of three numbers
-num1 = int(input("Enter a number: "))
-num2 = int(input("Enter a number: "))
-num3 = int(input("Enter a number: "))
+# num1 = int(input("Enter a number: "))
+# num2 = int(input("Enter a number: "))
+# num3 = int(input("Enter a number: "))
 
-if (num1 >= num2) and (num1 >= num3):
-    print(num1,"is the greatest")
-elif (num2 >= num1) and (num2 >= num3):
-    print(num2,"is the greatest")
-elif (num3 >= num2) and (num3 >= num1):
-    print(num3,"is the greatest")
+# if (num1 >= num2) and (num1 >= num3):
+#     print(num1,"is the greatest")
+# elif (num2 >= num1) and (num2 >= num3):
+#     print(num2,"is the greatest")
+# elif (num3 >= num2) and (num3 >= num1):
+#     print(num3,"is the greatest")
+# else:
+#     print(num1,num2,num3,"are equal")
+
+## Palindrome
+n = int(input("Enter a number: ")) # user input
+temp = n  #temporarily store a user input
+rev = 0   
+while (n > 0):
+    dig = n % 10  #for getting the last digit
+    rev = rev * 10 + dig # taking the last digit to the first digits place
+    n = n // 10
+if (temp == rev):
+    print(temp,":The number is a palindrome!")
 else:
-    print(num1,num2,num3,"are equal")
+    print(temp,":The number isn't a palindrome!")
+    
