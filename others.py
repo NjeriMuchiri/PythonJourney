@@ -4,7 +4,7 @@ new_line()
 # rotating the list of numbers by 3:
 nums = [1,2,3,4,5,6,7]
 k = 3
-nums = (nums[len(nums) - k:len(nums)]) + nums[0: len(nums) - k]
+nums = (nums[len(nums) - k:len(nums)]) + nums[0: len(nums) - k]   #nums = ([7 - 3:7]) + nums[0: 7 - 3]
 print(nums)
 new_line()
 # #by 2
