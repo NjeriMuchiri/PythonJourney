@@ -7,9 +7,10 @@ def main():
     #get the message to encode
     inString = input("Please enter the Unicode-encoded message: ")
     #Loop throught each substring and build unicode message
-    message = ""
+    chars = []
     for numStr in inString.split():
         codeNum = int(numStr) #converts digits to number
-        message = message + chr(codeNum) #concatenates character to message
+        chars.append(chr(codeNum)) #accumulates new character
+        message = "".join(chars)
     print("\nThe decoded message is: ", message)
 main()
